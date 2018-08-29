@@ -1,0 +1,68 @@
+/* For images that will move along with user scrolling */
+.pimg {
+  position:relative;
+  opacity:0.9;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  min-height: 400px;
+  background: transparent;
+}
+
+/* Set up font sizes */
+h2 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* General section settings */
+.section {
+  text-align:center;
+  padding:40px 80px;
+}
+
+/* For dark sections */
+.section-light {
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+/* For light sections */
+.section-dark {
+  background-color:#282e34;
+  color:#ddd;
+}
+
+/* For text inside sections */
+.ptext {
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+/* For text on top of images with border */
+.ptext .border {
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+/* For text on top of images with transparent border */
+.ptext .border.trans {
+  background-color:transparent;
+}
+
+@media(max-width:568px) {
+  .pimg {
+    background-attachment:fixed;
+  }
+}
